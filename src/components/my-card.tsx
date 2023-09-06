@@ -3,7 +3,7 @@ import Gallery from "./icons/gallery";
 export default function MyCard() {
   return (
     <div>
-      <div className="w-full h-[215px] bg-sky-400 bg-[url('/assets/mycard-bg.png')] bg-no-repeat rounded-xl relative" />
+      <div className="w-full h-[215px] bg-primary bg-[url('/assets/mycard-bg.png')] bg-no-repeat rounded-xl relative" />
       <div className="w-[114px] h-12 left-[31px] top-[20px] absolute flex-col justify-start items-start gap-2 inline-flex">
         <div className="text-white text-base font-normal">Name card</div>
         <div className="text-white text-xl font-medium">Syah Bandi</div>

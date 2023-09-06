@@ -1,5 +1,6 @@
 import ExpensesCard from "@/components/expenses-card";
 import MyCard from "@/components/my-card";
+import TransactionHistory from "@/components/transaction-history";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -47,7 +48,8 @@ export default function Home() {
         <Input type="mount" id="mount"></Input>
       </div> */}
       {/* <ExpensesCard /> */}
-      <MyCard />
+      {/* <MyCard /> */}
+      {/* <TransactionHistory /> */}
     </div>
   );
 }

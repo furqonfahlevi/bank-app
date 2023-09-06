@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -24,6 +25,20 @@ export default function Home() {
           <SelectItem value="yearly">Yearly</SelectItem>
         </SelectContent>
       </Select> */}
+      {/* <div>
+        <Input type="name" id="name" placeholder="Type customer name"></Input>
+        <Input
+          type="email"
+          id="email"
+          placeholder="Type customer email"
+        ></Input>
+        <Input
+          type="item"
+          id="item"
+          placeholder="Type customer item name"
+        ></Input>
+        <Input type="mount" id="mount"></Input>
+      </div> */}
     </div>
   );
 }

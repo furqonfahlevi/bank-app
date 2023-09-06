@@ -1,5 +1,6 @@
 import CustomerLatestTransaction from "@/components/customer-latest-transaction";
 import ExpensesCard from "@/components/expenses-card";
+import Menu from "@/components/menu";
 import MyCard from "@/components/my-card";
 import TransactionHistory from "@/components/transaction-history";
 import { Button } from "@/components/ui/button";
@@ -57,6 +58,7 @@ export default function Home() {
         customerEmail={"levi@gmail.com"}
       /> */}
       {/* <User userName={"Demo"} userEmail={"demoaccount@gmail.com"} /> */}
+      <Menu />
     </div>
   );
 }

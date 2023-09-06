@@ -12,6 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import User from "@/components/user";
 import Image from "next/image";
 
 export default function Home() {
@@ -51,10 +52,11 @@ export default function Home() {
       {/* <ExpensesCard /> */}
       {/* <MyCard /> */}
       {/* <TransactionHistory /> */}
-      <CustomerLatestTransaction
+      {/* <CustomerLatestTransaction
         customerName={"Levi"}
         customerEmail={"levi@gmail.com"}
-      />
+      /> */}
+      <User userName={"Demo"} userEmail={"demoaccount@gmail.com"} />
     </div>
   );
 }

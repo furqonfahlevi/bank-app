@@ -3,6 +3,7 @@ import CustomerLatestTransaction from "@/components/customer-transaction";
 import ExpensesCard from "@/components/expenses-card";
 import Menu from "@/components/menu";
 import MyCard from "@/components/my-card";
+import Sidebar from "@/components/sidebar";
 import TransactionHistory from "@/components/transaction-history";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -60,7 +61,8 @@ export default function Home() {
       /> */}
       {/* <User userName={"Demo"} userEmail={"demoaccount@gmail.com"} /> */}
       {/* <Menu /> */}
-      <CompanyLogo />
+      {/* <CompanyLogo /> */}
+      <Sidebar />
     </div>
   );
 }

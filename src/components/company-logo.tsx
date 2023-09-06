@@ -1,11 +1,19 @@
+import { cn } from "@/lib/utils";
 import Gallery from "./icons/gallery";
 
-export default function CompanyLogo() {
+type CompanyLogoProps = {
+  className?: string;
+};
+
+export default function CompanyLogo({ className }: CompanyLogoProps) {
   return (
-    <div>
-      <div className="w-48 h-14 bg-stone-300 flex justify-center items-center">
-        <Gallery />
-      </div>
+    <div
+      className={cn(
+        "w-48 h-14 mx-auto bg-stone-300 flex justify-center items-center",
+        className
+      )}
+    >
+      <Gallery />
     </div>
   );
 }

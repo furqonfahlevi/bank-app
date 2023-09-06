@@ -3,6 +3,7 @@ import ArrowRight from "./icons/arrow-right";
 import Moneys from "./icons/moneys";
 import { cn } from "@/lib/utils";
 import CardReceive from "./icons/card-receive";
+import { Skeleton } from "./ui/skeleton";
 
 const expensesCardVariants = cva(
   "w-full h-52 px-5 py-4 rounded-xl flex-col justify-center items-start gap-8 inline-flex",
@@ -22,13 +23,15 @@ const expensesCardVariants = cva(
 type ExpensesCardProps = VariantProps<typeof expensesCardVariants> & {
   cardName: string;
   cardDate: string;
-  cardBalance: string;
+  cardBalance: number;
   icon?: React.ReactNode;
+  loading?: boolean;
 };
 
 export default function ExpensesCard({
   type,
   icon,
+  loading = false,
   cardName,
   cardBalance,
   cardDate,
@@ -51,17 +54,32 @@ export default function ExpensesCard({
       <div className="self-stretch h-24 flex-col justify-start items-start gap-4 flex">
         <div className="self-stretch h-11 flex-col justify-start items-start gap-2 flex">
           <div className="text-base font-semibold">{cardName}</div>
-          <div
-            className={cn(
-              "text-sm font-normal",
-              type === "ghost" ? "text-neutral-400" : "text-neutral-50"
-            )}
-          >
-            {cardDate}
-          </div>
+          {loading ? (
+            <Skeleton className="w-[70px] h-[17px]"></Skeleton>
+          ) : (
+            <div
+              className={cn(
+                "text-sm font-normal",
+                type === "ghost" ? "text-neutral-400" : "text-neutral-50"
+              )}
+            >
+              {cardDate}
+            </div>
+          )}
         </div>
         <div className="self-stretch h-7 flex-col justify-center items-start gap-3 flex">
-          <div className="text-2xl font-semibold">{cardBalance}</div>
+          {loading ? (
+            <Skeleton className="w-[89px] h-[29px]"></Skeleton>
+          ) : (
+            <div className="text-2xl font-semibold">
+              {new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD",
+                currencyDisplay: "narrowSymbol",
+                maximumFractionDigits: 0,
+              }).format(cardBalance)}
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -1,5 +1,3 @@
-import CompanyLogo from "@/components/company-logo";
-import CustomerTransaction from "@/components/customer-transaction";
 import ExpensesCard from "@/components/expenses-card";
 import Add from "@/components/icons/add";
 import CardReceive from "@/components/icons/card-receive";
@@ -7,16 +5,11 @@ import CardSend from "@/components/icons/card-send";
 import Moneys from "@/components/icons/moneys";
 import LatestTransaction from "@/components/latest-transaction";
 import Layout from "@/components/layout";
-import Menu from "@/components/menu";
-import MyCard from "@/components/mycard";
 import MyCardSection from "@/components/mycard-section";
-import Sidebar from "@/components/sidebar";
 import TransactionForm from "@/components/transaction-form";
-import TransactionHistory from "@/components/transaction-history";
 import { Button } from "@/components/ui/button";
 import Card from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+
 import {
   Select,
   SelectContent,
@@ -24,10 +17,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import User from "@/components/user";
-import Image from "next/image";
+import useSWR from "swr";
+import { fetcher } from "@/lib/fetcher";
 
 export default function Home() {
+  const { data, error, isLoading } = useSWR("/expenses", fetcher);
   return (
     <Layout>
       <div className="flex gap-6">
@@ -51,21 +45,24 @@ export default function Home() {
             <div className="w-full flex justify-between items-center gap-3">
               <ExpensesCard
                 cardName="Balance"
-                cardDate="April 2022"
-                cardBalance="$20,129"
+                cardDate={data?.balance?.date}
+                cardBalance={data?.balance?.amount}
+                loading={isLoading}
                 icon={<Moneys />}
               />
               <ExpensesCard
                 cardName="Income"
-                cardDate="April 2022"
-                cardBalance="$20,129"
+                cardDate={data?.income?.date}
+                cardBalance={data?.income?.amount}
+                loading={isLoading}
                 icon={<CardReceive />}
                 type="ghost"
               />
               <ExpensesCard
                 cardName="Expenses"
-                cardDate="April 2022"
-                cardBalance="$20,129"
+                cardDate={data?.expenses?.date}
+                cardBalance={data?.expenses?.amount}
+                loading={isLoading}
                 icon={<CardSend />}
                 type="ghost"
               />

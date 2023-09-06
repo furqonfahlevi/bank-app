@@ -35,7 +35,7 @@ export default function TransactionForm() {
         <Label htmlFor="name">Item mount</Label>
         <div className="flex justify-center items-center">
           <Select defaultValue="usd">
-            <SelectTrigger className="basis-1/6">
+            <SelectTrigger className="flex-none w-[90px] py-7 bg-background border-none rounded-tr-none rounded-br-none ring-0 focus:ring-0 focus:outline-none active:ring-none">
               <SelectValue></SelectValue>
             </SelectTrigger>
             <SelectContent>
@@ -44,7 +44,11 @@ export default function TransactionForm() {
               <SelectItem value="eur">EUR</SelectItem>
             </SelectContent>
           </Select>
-          <Input type="mount" id="mount"></Input>
+          <Input
+            type="mount"
+            id="mount"
+            className="rounded-tl-none rounded-bl-none"
+          ></Input>
         </div>
       </div>
     </div>

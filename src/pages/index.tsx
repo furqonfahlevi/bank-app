@@ -1,3 +1,4 @@
+import CompanyLogo from "@/components/company-logo";
 import CustomerLatestTransaction from "@/components/customer-transaction";
 import ExpensesCard from "@/components/expenses-card";
 import Menu from "@/components/menu";
@@ -58,7 +59,8 @@ export default function Home() {
         customerEmail={"levi@gmail.com"}
       /> */}
       {/* <User userName={"Demo"} userEmail={"demoaccount@gmail.com"} /> */}
-      <Menu />
+      {/* <Menu /> */}
+      <CompanyLogo />
     </div>
   );
 }

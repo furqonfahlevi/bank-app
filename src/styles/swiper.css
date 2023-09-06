@@ -2,6 +2,13 @@
   text-align: unset;
 }
 
+.swiper {
+  display: grid;
+}
+.swiper-wrapper {
+  min-width: 0;
+}
+
 .swiper-pagination-bullet {
   @apply bg-neutral-400 transition-all !important;
 }

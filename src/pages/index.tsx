@@ -83,7 +83,9 @@ export default function Home() {
               </Button>
             }
           >
-            <LatestTransaction />
+            <div>
+              <LatestTransaction />
+            </div>
             <TransactionForm />
             <div className="flex justify-between items-center gap-6">
               <Button className="basis-1/2" variant="ghost">

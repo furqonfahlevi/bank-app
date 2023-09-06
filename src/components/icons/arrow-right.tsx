@@ -9,7 +9,7 @@ export default function ArrowRight() {
     >
       <path
         d="M8.91 19.92L15.43 13.4C16.2 12.63 16.2 11.37 15.43 10.6L8.91 4.07999"
-        stroke="white"
+        stroke="currentColor"
         stroke-width="1.5"
         stroke-miterlimit="10"
         stroke-linecap="round"

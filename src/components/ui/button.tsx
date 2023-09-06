@@ -12,9 +12,11 @@ const buttonVariants = cva(
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         ghost:
           "text-primary hover:bg-accent active:bg-primary active:text-primary-foreground",
+        icon: "bg-neutral-50 hover:bg-accent hover:text-accent-foreground",
       },
       size: {
         default: "h-[62px] p-5",
+        icon: "w-[18px] h-[18px]",
       },
     },
     defaultVariants: {

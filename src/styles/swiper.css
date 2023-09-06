@@ -1,0 +1,20 @@
+.swiper-pagination {
+  text-align: unset;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-neutral-400 transition-all !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary w-8 rounded-xl transition-all !important;
+}
+
+.swiper-card {
+  --add-bottom: 50px;
+  padding-bottom: var(--add-bottom);
+}
+
+.swiper-card [class^="swiper-button-"] {
+  top: calc(50% - var(--add-bottom) / 2);
+}

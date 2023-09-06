@@ -1,4 +1,7 @@
 import "@/styles/globals.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "@/styles/swiper.css";
 import type { AppProps } from "next/app";
 import { Montserrat } from "next/font/google";
 

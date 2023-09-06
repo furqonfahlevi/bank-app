@@ -1,4 +1,4 @@
-import CustomerLatestTransaction from "@/components/customer-latest-transaction";
+import CustomerLatestTransaction from "@/components/customer-transaction";
 import ExpensesCard from "@/components/expenses-card";
 import Menu from "@/components/menu";
 import MyCard from "@/components/my-card";
@@ -53,7 +53,7 @@ export default function Home() {
       {/* <ExpensesCard /> */}
       {/* <MyCard /> */}
       <TransactionHistory />
-      {/* <CustomerLatestTransaction
+      {/* <CustomerTransaction
         customerName={"Levi"}
         customerEmail={"levi@gmail.com"}
       /> */}

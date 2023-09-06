@@ -1,8 +1,8 @@
 import UserAvatar from "./icons/user-avatar";
 
 type UserDataProps = {
-  userName: any;
-  userEmail: any;
+  userName: string;
+  userEmail: string;
 };
 
 export default function User({ userName, userEmail }: UserDataProps) {

@@ -1,11 +1,11 @@
 import CustomerAvatar from "./icons/customer-avatar";
 
 type CustomerDataProps = {
-  customerName: any;
-  customerEmail: any;
+  customerName: string;
+  customerEmail: string;
 };
 
-export default function CustomerLatestTransaction({
+export default function CustomerTransaction({
   customerName,
   customerEmail,
 }: CustomerDataProps) {

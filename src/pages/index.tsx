@@ -1,4 +1,5 @@
 import ExpensesCard from "@/components/expenses-card";
+import MyCard from "@/components/my-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -45,7 +46,8 @@ export default function Home() {
         <Label htmlFor="name">Item mount</Label>
         <Input type="mount" id="mount"></Input>
       </div> */}
-      <ExpensesCard />
+      {/* <ExpensesCard /> */}
+      <MyCard />
     </div>
   );
 }

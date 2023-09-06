@@ -52,7 +52,7 @@ export default function Home() {
       </div> */}
       {/* <ExpensesCard /> */}
       {/* <MyCard /> */}
-      {/* <TransactionHistory /> */}
+      <TransactionHistory />
       {/* <CustomerLatestTransaction
         customerName={"Levi"}
         customerEmail={"levi@gmail.com"}

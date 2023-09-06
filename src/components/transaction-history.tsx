@@ -12,7 +12,7 @@ export default function TransactionHistory() {
             </div>
           </div>
           <div className="flex-col justify-center items-end gap-3 inline-flex">
-            <div className="text-red-400 text-xl font-semibold">$20,129</div>
+            <div className="text-red-amount text-xl font-semibold">$20,129</div>
           </div>
         </div>
       </div>

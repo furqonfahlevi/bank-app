@@ -56,14 +56,14 @@ export default function Home() {
                 icon={<Moneys />}
               />
               <ExpensesCard
-                cardName="Balance"
+                cardName="Income"
                 cardDate="April 2022"
                 cardBalance="$20,129"
                 icon={<CardReceive />}
                 type="ghost"
               />
               <ExpensesCard
-                cardName="Balance"
+                cardName="Expenses"
                 cardDate="April 2022"
                 cardBalance="$20,129"
                 icon={<CardSend />}

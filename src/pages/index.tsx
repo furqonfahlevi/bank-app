@@ -56,7 +56,7 @@ export default function Home() {
         customerName={"Levi"}
         customerEmail={"levi@gmail.com"}
       /> */}
-      <User userName={"Demo"} userEmail={"demoaccount@gmail.com"} />
+      {/* <User userName={"Demo"} userEmail={"demoaccount@gmail.com"} /> */}
     </div>
   );
 }

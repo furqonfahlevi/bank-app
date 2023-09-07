@@ -1,11 +1,13 @@
+import Gallery from "@/components/icons/gallery";
 import { cn } from "@/lib/utils";
-import Gallery from "./icons/gallery";
 
 type CompanyLogoProps = {
   className?: string;
 };
 
-export default function CompanyLogo({ className }: CompanyLogoProps) {
+export default function SidebarItemCompanyLogo({
+  className,
+}: CompanyLogoProps) {
   return (
     <div
       className={cn(

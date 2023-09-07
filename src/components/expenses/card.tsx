@@ -1,9 +1,7 @@
 import { VariantProps, cva } from "class-variance-authority";
-import ArrowRight from "./icons/arrow-right";
-import Moneys from "./icons/moneys";
 import { cn } from "@/lib/utils";
-import CardReceive from "./icons/card-receive";
-import { Skeleton } from "./ui/skeleton";
+import ArrowRight from "../icons/arrow-right";
+import { Skeleton } from "../ui/skeleton";
 
 const expensesCardVariants = cva(
   "w-full h-52 px-5 py-4 rounded-xl flex-col justify-center items-start gap-8 inline-flex",

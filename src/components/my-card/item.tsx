@@ -1,4 +1,4 @@
-import Gallery from "./icons/gallery";
+import Gallery from "../icons/gallery";
 
 type MyCardProps = {
   cardName: string;
@@ -7,7 +7,7 @@ type MyCardProps = {
   cvv: number;
 };
 
-export default function MyCard({
+export default function MyCardItem({
   cardName,
   cardNumber,
   cardDate,

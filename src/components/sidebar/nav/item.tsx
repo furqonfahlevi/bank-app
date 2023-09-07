@@ -1,7 +1,7 @@
+import Category from "@/components/icons/category";
 import Link from "next/link";
-import Category from "./icons/category";
 
-export default function Menu() {
+export default function SidebarNavItem() {
   return (
     <Link href={"/"}>
       <div className="w-full h-20 pl-7 pr-5 py-5 bg-white flex-col justify-center items-center  gap-5 inline-flex hover:cursor-pointer hover:bg-accent border-r-[3.27px] border-primary">

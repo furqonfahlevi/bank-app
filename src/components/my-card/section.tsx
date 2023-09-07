@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import MyCard from "./mycard";
-import Card, { CardHeader } from "./ui/card";
 import { Pagination } from "swiper/modules";
 import Link from "next/link";
-import TransactionHistory from "./transaction-history";
 import useSWR from "swr";
 import { fetcher } from "@/lib/fetcher";
-import { Skeleton } from "./ui/skeleton";
+import Card, { CardHeader } from "../ui/card";
+import { Skeleton } from "../ui/skeleton";
+import MyCardItem from "./item";
+import MyCardTransactionHistory from "./transaction/history";
 
 type Card = {
   cardName: string;
@@ -43,12 +43,12 @@ export default function MyCardSection() {
           {data?.map((card: Card) => {
             return (
               <SwiperSlide>
-                <MyCard
+                <MyCardItem
                   cardName={card.cardName}
                   cardNumber={card.cardNumber}
                   cardDate={card.cardDate}
                   cvv={card.cvv}
-                ></MyCard>
+                ></MyCardItem>
               </SwiperSlide>
             );
           })}
@@ -78,7 +78,7 @@ export default function MyCardSection() {
             <div className="flex flex-col mt-4 gap-3">
               {transactions?.history.map((transaction: Transaction) => {
                 return (
-                  <TransactionHistory
+                  <MyCardTransactionHistory
                     name={transaction.name}
                     timestamp={transaction.timestamp}
                     amount={transaction.amount}

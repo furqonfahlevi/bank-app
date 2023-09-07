@@ -8,7 +8,7 @@ type TransactionHistoryProps = {
   type: "expenses" | "income";
 };
 
-export default function TransactionHistory({
+export default function MyCardTransactionHistory({
   name,
   timestamp,
   amount,

@@ -22,7 +22,11 @@ type Transaction = {
   type: "expenses" | "income";
 };
 
-export default function MyCardSection() {
+type MyCardSectionProps = {
+  props: Card | Transaction;
+};
+
+export default function MyCardSection({ props }: MyCardSectionProps) {
   const { data, isLoading } = useSWR("/mycards", fetcher);
   const { data: transactions, isLoading: isLoadingTransactions } = useSWR(
     "/transactions",

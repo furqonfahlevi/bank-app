@@ -1,7 +1,7 @@
+import InvoiceLatestTransactionCustomer from "./customer";
 import { Swiper, SwiperSlide } from "swiper/react";
-import LatestTransactionCustomer from "./customer";
 
-export default function LatestTransactionSection() {
+export default function InvoiceLatestTransactionSection() {
   return (
     <div className="py-6 border-b">
       <h1 className="text-base text-foreground font-medium">
@@ -19,75 +19,76 @@ export default function LatestTransactionSection() {
               spaceBetween: 150,
             },
           }}
+          className="cursor-pointer"
         >
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <LatestTransactionCustomer
+            <InvoiceLatestTransactionCustomer
               customerName="Madrani Andi"
               customerEmail="Madraniadi20@gmail.com"
             />

@@ -1,8 +1,8 @@
 import Add from "../icons/add";
-import LatestTransactionSection from "./latest-transaction/section";
 import InvoiceForm from "./form";
 import { Button } from "../ui/button";
 import Card from "../ui/card";
+import InvoiceLatestTransactionSection from "./latest-transaction/swiper";
 
 export default function InvoiceSection() {
   return (
@@ -15,7 +15,7 @@ export default function InvoiceSection() {
       }
     >
       <div>
-        <LatestTransactionSection />
+        <InvoiceLatestTransactionSection />
       </div>
       <InvoiceForm />
       <div className="flex justify-between items-center gap-6">

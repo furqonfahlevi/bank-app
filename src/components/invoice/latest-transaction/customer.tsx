@@ -5,7 +5,7 @@ type CustomerDataProps = {
   customerEmail: string;
 };
 
-export default function LatestTransactionCustomer({
+export default function InvoiceLatestTransactionCustomer({
   customerName,
   customerEmail,
 }: CustomerDataProps) {

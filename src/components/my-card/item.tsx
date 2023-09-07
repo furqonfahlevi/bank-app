@@ -15,7 +15,7 @@ export default function MyCardItem({
 }: MyCardProps) {
   return (
     <>
-      <div className="w-full h-[215px] flex flex-col justify-between pt-5 pl-8 pb-7 pr-6 bg-primary bg-[url('/assets/mycard-bg.png')] bg-cover bg-no-repeat rounded-xl relative">
+      <div className="w-full h-[215px] flex flex-col justify-between pt-5 pl-8 pb-7 pr-6 bg-primary bg-[url('/assets/mycard-bg.png')] bg-cover bg-no-repeat rounded-xl relative cursor-pointer">
         <div className="flex items-center">
           <div className="w-full h-12 flex-col justify-start items-start gap-2 inline-flex">
             <div className="text-white text-base font-normal">Name card</div>

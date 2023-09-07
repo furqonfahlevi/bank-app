@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export default function TransactionForm() {
+export default function InvoiceForm() {
   return (
     <div className="grid grid-cols-2 gap-6 py-6">
       <div className="flex flex-col gap-3">
@@ -35,10 +35,10 @@ export default function TransactionForm() {
         <Label htmlFor="name">Item mount</Label>
         <div className="flex justify-center items-center">
           <Select defaultValue="usd">
-            <SelectTrigger className="flex-none w-[90px] py-7 bg-background border-none rounded-tr-none rounded-br-none ring-0 focus:ring-0 focus:outline-none active:ring-none">
+            <SelectTrigger className="flex-none w-[90px] text-neutral-500 py-7 bg-background border-none rounded-tr-none rounded-br-none ring-0 ring-offset-0 focus:ring-0 focus:ring-offset-0 focus:outline-none active:ring-none">
               <SelectValue></SelectValue>
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent id="select-currency">
               <SelectItem value="usd">USD</SelectItem>
               <SelectItem value="idr">IDR</SelectItem>
               <SelectItem value="eur">EUR</SelectItem>
